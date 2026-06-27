@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSJ Quality Home Construction LLC</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: "#111111",
+                        brandGreen: "#22c55e",
+                        darkSlate: "#1e293b"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-50 text-zinc-900 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="bg-charcoal text-white fixed w-full z-50 border-b border-zinc-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl font-black tracking-wider text-white">CSJ <span class="text-brandGreen">QUALITY</span></span>
+                <span class="text-xs uppercase tracking-widest text-zinc-400 -mt-1">Home Construction</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm tracking-wide">
+                <a href="#about" class="hover:text-brandGreen transition">About</a>
+                <a href="#services" class="hover:text-brandGreen transition">Services</a>
+                <a href="#guarantee" class="hover:text-brandGreen transition">Our Guarantee</a>
+            </div>
+            <div>
+                <a href="tel:407-256-3670" class="bg-brandGreen text-charcoal px-5 py-2.5 rounded-lg font-bold text-sm tracking-wide hover:bg-green-400 transition shadow-md shadow-green-900/20">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-charcoal pt-32 pb-24 md:pt-40 md:pb-36 text-white overflow-hidden">
+        <!-- Subtle pattern or overlay line could go here -->
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="text-brandGreen uppercase text-xs font-black tracking-widest bg-green-500/10 px-3 py-1.5 rounded-full border border-green-500/20">
+                Serving Orlando & Surrounding Areas
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mt-6 mb-6 leading-tight">
+                Professional Home <br class="hidden md:block"/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">Improvement Services</span>
+            </h1>
+            <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                We provide reliable, high-quality home improvement solutions designed to enhance the beauty, functionality, and value of your property. With years of hands-on experience, we specialize in detailed craftsmanship, clean finishes, and dependable service you can trust.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#services" class="w-full sm:w-auto bg-brandGreen text-charcoal px-8 py-4 rounded-xl font-bold tracking-wide hover:bg-green-400 transition text-center shadow-lg shadow-green-900/30">
+                    Explore Our Services
+                </a>
+                <a href="tel:407-256-3670" class="w-full sm:w-auto bg-zinc-800 text-white border border-zinc-700 px-8 py-4 rounded-xl font-bold tracking-wide hover:bg-zinc-700 transition text-center">
+                    Get Free Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION BLOCK -->
+    <section id="about" class="py-16 bg-white border-b border-zinc-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3">Our Core Philosophy</h2>
+            <p class="text-xl md:text-2xl text-zinc-800 font-medium italic leading-relaxed">
+                "From small upgrades to full property improvements, we focus on precision, durability, and customer satisfaction every step of the way. All projects include professional installation, a clean work area, and quality inspection before completion."
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-20 bg-zinc-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black tracking-tight text-charcoal">Expert Renovations</h2>
+                <p class="text-zinc-500 mt-2 max-w-md mx-auto">No matter the scale, we deliver clean finishes and reliable execution on every project layout.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-zinc-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center font-bold text-xl mb-6">🔨</div>
+                        <h3 class="text-xl font-bold text-charcoal mb-3">Home Renovations</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">Complete transformations optimized for value. We remodel spaces with modern styling, crisp layouts, and meticulous attention to structure.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-zinc-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center font-bold text-xl mb-6">🚿</div>
+                        <h3 class="text-xl font-bold text-charcoal mb-3">Bathroom Remodels</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">Converting guest bathrooms to high-end functional spaces. Complete custom tile work, shower build-outs, vanity updates, and precise fixtures.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-zinc-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center font-bold text-xl mb-6">🧱</div>
+                        <h3 class="text-xl font-bold text-charcoal mb-3">Demolition & Concrete</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">Heavy-duty adjustments handled safely. Expert concrete cutting, custom wall moves, structural prep work, and clean site disposal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE & TRANSPARENCY SECTION -->
+    <section id="guarantee" class="py-20 bg-charcoal text-white relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brandGreen font-bold text-xs uppercase tracking-widest block mb-2">Unmatched Protection</span>
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-6">1-Year Workmanship Warranty Included</h2>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        We don't just finish the job; we back it up. Every single project installation we handle comes integrated with a complete 1-year workmanship guarantee to ensure absolute peace of mind.
+                    </p>
+                    <div class="flex items-center gap-3 bg-zinc-800/50 border border-zinc-700/50 p-4 rounded-xl">
+                        <span class="text-2xl">✅</span>
+                        <span class="text-sm font-semibold text-zinc-300">Certified precision, durability, and standard-setting safety.</span>
+                    </div>
+                </div>
+                
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span>💳</span> Balanced Payment Schedule
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-zinc-800/40 rounded-xl border border-zinc-700/30">
+                            <span class="text-brandGreen font-black text-lg block">75% Deposit</span>
+                            <span class="text-xs text-zinc-400 uppercase tracking-wider">Required to initiate project scheduling & supply logistics</span>
+                        </div>
+                        <div class="p-4 bg-zinc-800/40 rounded-xl border border-zinc-700/30">
+                            <span class="text-white font-black text-lg block">25% Remaining Balance</span>
+                            <span class="text-xs text-zinc-400 uppercase tracking-wider">Due immediately upon seamless project completion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CALL TO ACTION -->
+    <footer class="bg-zinc-950 text-white py-12 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-black tracking-wider">CSJ QUALITY HOME CONSTRUCTION LLC</p>
+                <p class="text-sm text-zinc-500 mt-1">© 2026 All Rights Reserved. Professional Home Renovations.</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="tel:407-256-3670" class="bg-zinc-900 border border-zinc-800 px-6 py-3 rounded-xl font-bold text-sm tracking-wide hover:bg-zinc-800 transition">
+                    Call: 407-256-3670
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
